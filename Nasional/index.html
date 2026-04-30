@@ -1,0 +1,209 @@
+<!-- Copyright by Mr.Rm19 -->
+<!DOCTYPE html> <!-- Copyright by Mr.Rm19 -->
+<html lang="id"> <!-- Copyright by Mr.Rm19 -->
+<head> <!-- Copyright by Mr.Rm19 -->
+    <meta charset="UTF-8"> <!-- Copyright by Mr.Rm19 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Copyright by Mr.Rm19 -->
+    <title>Nasional | ALL-NEWS Intelligence by Mr.Rm19</title> <!-- Copyright by Mr.Rm19 -->
+    
+    <style>
+        /* Copyright by Mr.Rm19 */
+        :root {
+            --gold-premium: #c5a059; /* Copyright by Mr.Rm19 */
+            --pure-white: #ffffff;    /* Copyright by Mr.Rm19 */
+            --deep-black: #1a1a1a;    /* Copyright by Mr.Rm19 */
+            --border-color: #dddddd; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        body {
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            font-family: 'Times New Roman', Times, serif; /* Gaya Berita Klasik - Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            padding: 0; /* Copyright by Mr.Rm19 */
+            user-select: none; /* PROTEKSI: Anti-Copy - Copyright by Mr.Rm19 */
+            -webkit-user-select: none; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        header {
+            border-bottom: 5px double var(--deep-black); /* Copyright by Mr.Rm19 */
+            padding: 45px 20px; /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .site-logo {
+            font-size: 3.5rem; /* Copyright by Mr.Rm19 */
+            font-weight: 900; /* Copyright by Mr.Rm19 */
+            letter-spacing: -1px; /* Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .tagline {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-size: 0.9rem; /* Copyright by Mr.Rm19 */
+            font-style: italic; /* Copyright by Mr.Rm19 */
+            margin-top: 10px; /* Copyright by Mr.Rm19 */
+            border-top: 1px solid var(--border-color); /* Copyright by Mr.Rm19 */
+            border-bottom: 1px solid var(--border-color); /* Copyright by Mr.Rm19 */
+            display: inline-block; /* Copyright by Mr.Rm19 */
+            padding: 5px 25px; /* Copyright by Mr.Rm19 */
+            letter-spacing: 1px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .container {
+            max-width: 1200px; /* Copyright by Mr.Rm19 */
+            margin: 40px auto; /* Copyright by Mr.Rm19 */
+            padding: 20px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .section-header {
+            border-bottom: 3px solid var(--deep-black); /* Copyright by Mr.Rm19 */
+            margin-bottom: 40px; /* Copyright by Mr.Rm19 */
+            display: flex; /* Copyright by Mr.Rm19 */
+            justify-content: space-between; /* Copyright by Mr.Rm19 */
+            align-items: flex-end; /* Copyright by Mr.Rm19 */
+            padding-bottom: 5px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .section-title {
+            font-size: 1.8rem; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .news-list {
+            display: grid; /* Copyright by Mr.Rm19 */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Copyright by Mr.Rm19 */
+            gap: 50px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article {
+            text-decoration: none; /* Copyright by Mr.Rm19 */
+            color: inherit; /* Copyright by Mr.Rm19 */
+            display: block; /* Copyright by Mr.Rm19 */
+            transition: 0.3s; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article:hover {
+            opacity: 0.7; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-meta {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            font-size: 0.85rem; /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+            margin-bottom: 8px; /* Copyright by Mr.Rm19 */
+            display: block; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-heading {
+            font-size: 2rem; /* Copyright by Mr.Rm19 */
+            margin: 0 0 15px 0; /* Copyright by Mr.Rm19 */
+            line-height: 1.1; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-preview {
+            font-family: Arial, Helvetica, sans-serif; /* Copyright by Mr.Rm19 */
+            font-size: 1rem; /* Copyright by Mr.Rm19 */
+            color: #333; /* Copyright by Mr.Rm19 */
+            line-height: 1.5; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        footer {
+            background-color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            padding: 50px 20px; /* Copyright by Mr.Rm19 */
+            margin-top: 80px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .footer-brand {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-size: 1.4rem; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            margin-bottom: 10px; /* Copyright by Mr.Rm19 */
+        }
+    </style>
+
+    <!-- SECURITY PROTOCOL BY Mr.Rm19 -->
+    <script>
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        /* Copyright by Mr.Rm19 */
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73) || (e.ctrlKey && e.keyCode == 85)) {
+                return false;
+            }
+        };
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('copy', (e) => {
+            e.preventDefault();
+            alert("SISTEM PROTEKSI NASIONAL Mr.Rm19: Dilarang menyalin berita tanpa izin resmi!");
+        });
+    </script>
+</head>
+<body oncontextmenu="return false;"> <!-- Copyright by Mr.Rm19 -->
+
+    <header> <!-- Copyright by Mr.Rm19 -->
+        <h1 class="site-logo">ALL-NEWS</h1> <!-- Copyright by Mr.Rm19 -->
+        <div class="tagline">Warta Nasional Terpercaya by Mr.Rm19</div> <!-- Copyright by Mr.Rm19 -->
+    </header> <!-- Copyright by Mr.Rm19 -->
+
+    <div class="container"> <!-- Copyright by Mr.Rm19 -->
+        <div class="section-header"> <!-- Copyright by Mr.Rm19 -->
+            <h2 class="section-title">BERITA NASIONAL</h2> <!-- Copyright by Mr.Rm19 -->
+            <span style="font-size: 0.8rem; font-weight: bold;">UPDATE: 30 APRIL 2026</span> <!-- Copyright by Mr.Rm19 -->
+        </div> <!-- Copyright by Mr.Rm19 -->
+        
+        <div class="news-list"> <!-- Copyright by Mr.Rm19 -->
+            
+            <!-- Berita Nasional 1 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Nasional/kecelakaan-kereta-bekasi-timur-2026.html" class="article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-meta">Topik Utama / Peristiwa</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-heading">Tragedi KRL Bekasi: Analisis Mendalam Penyebab Kecelakaan</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-preview">Tim investigasi ALL-NEWS bentukan Mr.Rm19 melaporkan temuan terbaru di lapangan mengenai gangguan teknis yang memicu insiden besar di stasiun Bekasi...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita Nasional 2 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Nasional/dampak-regulasi-digital.html" class="article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-meta">Politik / Kebijakan</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-heading">Dampak Regulasi Digital Terbaru terhadap Ekonomi Nasional</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-preview">Mr.Rm19 mengulas bagaimana kebijakan pemerintah dalam mengatur lalu lintas data digital akan berpengaruh besar pada stabilitas ekonomi dalam negeri...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita Nasional 3 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Nasional/perkembangan-psn-2026.html" class="article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-meta">Infrastruktur / Pembangunan</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-heading">Perkembangan Proyek Strategis Nasional Tahun 2026</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-preview">Laporan eksklusif mengenai kemajuan pembangunan infrastruktur fisik dan digital yang menjadi fokus utama pemerintah saat ini...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+        </div> <!-- Copyright by Mr.Rm19 -->
+    </div> <!-- Copyright by Mr.Rm19 -->
+
+    <footer> <!-- Copyright by Mr.Rm19 -->
+        <div class="footer-brand">Mr.Rm19 Intelligence Center</div> <!-- Copyright by Mr.Rm19 -->
+        <p style="margin: 10px 0; font-size: 0.9rem;">&copy; 2026 ALL-NEWS Hub. Seluruh konten Nasional dilindungi hak cipta Mr.Rm19.</p> <!-- Copyright by Mr.Rm19 -->
+        <p style="font-size: 0.7rem; color: #888; text-transform: uppercase;">Pelanggaran terhadap kerahasiaan kode akan ditindak secara teknis oleh Mr.Rm19.</p> <!-- Copyright by Mr.Rm19 -->
+    </footer> <!-- Copyright by Mr.Rm19 -->
+
+</body> <!-- Copyright by Mr.Rm19 -->
+</html> <!-- Copyright by Mr.Rm19 -->
