@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL-NEWS | Centralized Intelligence Hub by Mr.Rm19</title>
+    <style>
+        :root {
+            --primary-red: #e74c3c;
+            --dark-bg: #0d1117;
+            --card-bg: #161b22;
+            --gold: #bf953f;
+            --text-main: #f0f6fc;
+            --text-dim: #8b949e;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Header & Logo */
+        header {
+            background: linear-gradient(to bottom, #010409, #0d1117);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo-box h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .logo-box h1 span { color: var(--primary-red); }
+
+        .tagline {
+            color: var(--gold);
+            font-size: 1rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* Container Utama */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Seksi Tentang ALL-NEWS */
+        .intro-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        .intro-section h2 {
+            color: var(--gold);
+            border-left: 4px solid var(--primary-red);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        .intro-section p {
+            color: var(--text-dim);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Navigasi Kategori Berita */
+        .category-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .cat-item {
+            background: #1c2128;
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .cat-item:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            background: #21262d;
+        }
+
+        .cat-item h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--gold);
+        }
+
+        .cat-item small {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid #30363d;
+            margin-top: 50px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        footer a { color: var(--gold); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">
+            <h1>ALL-<span>NEWS</span></h1>
+            <p class="tagline">Centralized Information Intelligence Hub by Mr.Rm19</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="intro-section">
+            <h2>Visi & Misi ALL-NEWS</h2>
+            <p>
+                Selamat datang di <strong>ALL-NEWS</strong>, sebuah inisiatif media digital yang dirancang oleh <strong>Mr.Rm19</strong> untuk menjadi pusat informasi terintegrasi. Di tengah derasnya arus informasi global, ALL-NEWS hadir sebagai solusi untuk menyajikan data dan berita secara terstruktur, akurat, dan mudah diakses melalui satu antarmuka yang efisien.
+            </p>
+            <p>
+                Portal ini bukan sekadar kumpulan teks, melainkan sebuah <em>Intelligence Hub</em> yang membagi informasi ke dalam kategori strategis. Mulai dari perkembangan politik dan sosial di kategori <strong>Nasional</strong>, hingga pembaruan teknologi terkini dan isu <strong>Keamanan Siber</strong> yang menjadi fokus utama pengembangan perangkat lunak kami di masa depan.
+            </p>
+            <p>
+                Melalui platform ini, kami berkomitmen untuk meningkatkan literasi digital masyarakat dengan menyajikan konten edukatif di folder <strong>Edukasi Digital</strong> serta menjaga nilai-nilai sejarah dan spiritual melalui kategori <strong>Religi & Sejarah</strong>. Setiap data yang tersaji di sini dikelola secara mandiri untuk memastikan integritas informasi tetap terjaga.
+            </p>
+            <p>
+                Silakan jelajahi kategori di bawah ini untuk mengakses laporan berita, jurnal, dan dokumentasi mendalam yang disusun secara berkala sesuai dengan perkembangan peristiwa dunia.
+            </p>
+        </section>
+
+        <h2 style="text-align: center; color: var(--gold); margin-bottom: 30px;">JELAJAHI KATEGORI</h2>
+        <div class="category-nav">
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Nasional/" class="cat-item">
+                <h3>NASIONAL</h3>
+                <small>Peristiwa, Politik & Isu Dalam Negeri</small>
+            </a>
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Teknologi/" class="cat-item">
+                <h3>TEKNOLOGI</h3>
+                <small>Inovasi, Software & Kecerdasan Buatan</small>
+            </a>
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Keamanan-Siber/" class="cat-item">
+                <h3>KEAMANAN SIBER</h3>
+                <small>Privasi Data, Hacking & Network Security</small>
+            </a>
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Edukasi-Digital/" class="cat-item">
+                <h3>EDUKASI DIGITAL</h3>
+                <small>Tutorial, Literasi & Panduan IT</small>
+            </a>
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Religi-dan-Sejarah/" class="cat-item">
+                <h3>RELIGI & SEJARAH</h3>
+                <small>Arsip Peradaban & Nilai Spiritual</small>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>Mr.Rm19 Official</strong></p>
+        <p>Automated Data Streams & Structured Interface | <a href="https://mister-rdanm19.github.io/">Kembali ke Portofolio Utama</a></p>
+    </footer>
+
+</body>
+</html>
