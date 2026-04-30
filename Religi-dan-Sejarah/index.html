@@ -1,0 +1,205 @@
+<!-- Copyright by Mr.Rm19 -->
+<!DOCTYPE html> <!-- Copyright by Mr.Rm19 -->
+<html lang="id"> <!-- Copyright by Mr.Rm19 -->
+<head> <!-- Copyright by Mr.Rm19 -->
+    <meta charset="UTF-8"> <!-- Copyright by Mr.Rm19 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Copyright by Mr.Rm19 -->
+    <title>Religi & Sejarah | ALL-NEWS Hub by Mr.Rm19</title> <!-- Copyright by Mr.Rm19 -->
+    
+    <style>
+        /* Copyright by Mr.Rm19 */
+        :root {
+            --gold-premium: #c5a059; /* Gold Mewah - Copyright by Mr.Rm19 */
+            --pure-white: #ffffff;    /* Copyright by Mr.Rm19 */
+            --deep-black: #111111;    /* Copyright by Mr.Rm19 */
+            --border-color: #eeeeee; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        body {
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            font-family: 'Times New Roman', Times, serif; /* Gaya Berita Klasik - Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            padding: 0; /* Copyright by Mr.Rm19 */
+            user-select: none; /* PROTEKSI: Anti-Copy - Copyright by Mr.Rm19 */
+            -webkit-user-select: none; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        header {
+            border-bottom: 4px double var(--deep-black); /* Copyright by Mr.Rm19 */
+            padding: 50px 20px; /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .site-logo {
+            font-size: 3.8rem; /* Copyright by Mr.Rm19 */
+            font-weight: 900; /* Copyright by Mr.Rm19 */
+            letter-spacing: -2px; /* Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .tagline {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-size: 0.85rem; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            margin-top: 15px; /* Copyright by Mr.Rm19 */
+            border-top: 1px solid var(--deep-black); /* Copyright by Mr.Rm19 */
+            border-bottom: 1px solid var(--deep-black); /* Copyright by Mr.Rm19 */
+            display: inline-block; /* Copyright by Mr.Rm19 */
+            padding: 6px 30px; /* Copyright by Mr.Rm19 */
+            letter-spacing: 4px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .container {
+            max-width: 1200px; /* Copyright by Mr.Rm19 */
+            margin: 40px auto; /* Copyright by Mr.Rm19 */
+            padding: 20px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .section-label {
+            text-align: center; /* Copyright by Mr.Rm19 */
+            margin-bottom: 50px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .section-label h2 {
+            font-size: 2rem; /* Copyright by Mr.Rm19 */
+            display: inline-block; /* Copyright by Mr.Rm19 */
+            border-bottom: 2px solid var(--gold-premium); /* Copyright by Mr.Rm19 */
+            padding-bottom: 10px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .news-grid {
+            display: grid; /* Copyright by Mr.Rm19 */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Copyright by Mr.Rm19 */
+            gap: 60px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-link {
+            text-decoration: none; /* Copyright by Mr.Rm19 */
+            color: inherit; /* Copyright by Mr.Rm19 */
+            display: block; /* Copyright by Mr.Rm19 */
+            transition: 0.4s ease; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-link:hover {
+            opacity: 0.6; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .category-tag {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            font-size: 0.75rem; /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+            letter-spacing: 1px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .title {
+            font-size: 2.2rem; /* Copyright by Mr.Rm19 */
+            margin: 15px 0; /* Copyright by Mr.Rm19 */
+            line-height: 1; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .summary {
+            font-family: Arial, sans-serif; /* Copyright by Mr.Rm19 */
+            font-size: 1rem; /* Copyright by Mr.Rm19 */
+            color: #444; /* Copyright by Mr.Rm19 */
+            line-height: 1.6; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        footer {
+            background-color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            padding: 70px 20px; /* Copyright by Mr.Rm19 */
+            margin-top: 100px; /* Copyright by Mr.Rm19 */
+            border-top: 5px solid var(--gold-premium); /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .footer-logo {
+            font-size: 2rem; /* Copyright by Mr.Rm19 */
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            margin-bottom: 20px; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+        }
+    </style>
+
+    <!-- SECURITY CORE BY Mr.Rm19 -->
+    <script>
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        /* Copyright by Mr.Rm19 */
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73) || (e.ctrlKey && e.keyCode == 85)) {
+                return false;
+            }
+        };
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('copy', (e) => {
+            e.preventDefault();
+            alert("SECURED ARCHIVE: Hak cipta penuh milik Mr.Rm19. Akses salin ditutup.");
+        });
+    </script>
+</head>
+<body oncontextmenu="return false;"> <!-- Copyright by Mr.Rm19 -->
+
+    <header> <!-- Copyright by Mr.Rm19 -->
+        <h1 class="site-logo">ALL-NEWS</h1> <!-- Copyright by Mr.Rm19 -->
+        <div class="tagline">Arsip Religi & Sejarah by Mr.Rm19</div> <!-- Copyright by Mr.Rm19 -->
+    </header> <!-- Copyright by Mr.Rm19 -->
+
+    <div class="container"> <!-- Copyright by Mr.Rm19 -->
+        <div class="section-label"> <!-- Copyright by Mr.Rm19 -->
+            <h2>Khazanah Budaya</h2> <!-- Copyright by Mr.Rm19 -->
+        </div> <!-- Copyright by Mr.Rm19 -->
+        
+        <div class="news-grid"> <!-- Copyright by Mr.Rm19 -->
+            
+            <!-- Berita 1 - Copyright by Mr.Rm19 -->
+            <a href="r1.html" class="article-link"> <!-- Copyright by Mr.Rm19 -->
+                <span class="category-tag">Sejarah / Arsitektur Kuno</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="title">Menguak Rahasia Pembangunan Candi Megah Nusantara</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="summary">Mr.Rm19 meninjau teknik rekayasa masa lalu yang melampaui zamannya dalam membangun struktur keagamaan yang masih kokoh hingga kini...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita 2 - Copyright by Mr.Rm19 -->
+            <a href="r2.html" class="article-link"> <!-- Copyright by Mr.Rm19 -->
+                <span class="category-tag">Religi / Filosofi Hidup</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="title">Makna Spiritual di Balik Tradisi Turun-Temurun</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="summary">Sebuah ulasan mengenai bagaimana nilai religi membentuk karakter bangsa yang kuat dan penuh toleransi dalam sejarah panjang peradaban kita...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita 3 - Copyright by Mr.Rm19 -->
+            <a href="r3.html" class="article-link"> <!-- Copyright by Mr.Rm19 -->
+                <span class="category-tag">Arsip / Digitalisasi</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="title">Menyelamatkan Naskah Kuno Melalui Teknologi Digital</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="summary">Bagaimana upaya Mr.Rm19 dalam mempromosikan pelestarian data sejarah agar tetap dapat diakses oleh generasi mendatang dengan aman...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+        </div> <!-- Copyright by Mr.Rm19 -->
+    </div> <!-- Copyright by Mr.Rm19 -->
+
+    <footer> <!-- Copyright by Mr.Rm19 -->
+        <div class="footer-logo">Mr.Rm19 History Intelligence</div> <!-- Copyright by Mr.Rm19 -->
+        <p style="margin: 10px 0; font-size: 0.9rem;">&copy; 2026 ALL-NEWS Hub. Seluruh konten Religi & Sejarah dikelola oleh Mr.Rm19.</p> <!-- Copyright by Mr.Rm19 -->
+        <p style="font-size: 0.7rem; color: #555;">SECURITY SYSTEM ENABLED. Dilarang keras melakukan manipulasi pada repositori ini.</p> <!-- Copyright by Mr.Rm19 -->
+    </footer> <!-- Copyright by Mr.Rm19 -->
+
+</body> <!-- Copyright by Mr.Rm19 -->
+</html> <!-- Copyright by Mr.Rm19 -->
