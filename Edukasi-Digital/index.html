@@ -1,0 +1,198 @@
+<!-- Copyright by Mr.Rm19 -->
+<!DOCTYPE html> <!-- Copyright by Mr.Rm19 -->
+<html lang="id"> <!-- Copyright by Mr.Rm19 -->
+<head> <!-- Copyright by Mr.Rm19 -->
+    <meta charset="UTF-8"> <!-- Copyright by Mr.Rm19 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Copyright by Mr.Rm19 -->
+    <title>Edukasi Digital | ALL-NEWS Hub by Mr.Rm19</title> <!-- Copyright by Mr.Rm19 -->
+    
+    <style>
+        /* Copyright by Mr.Rm19 */
+        :root {
+            --gold-premium: #c5a059; /* Gold Elegan - Copyright by Mr.Rm19 */
+            --pure-white: #ffffff;    /* Copyright by Mr.Rm19 */
+            --deep-black: #1a1a1a;    /* Copyright by Mr.Rm19 */
+            --soft-gray: #f4f4f4;    /* Copyright by Mr.Rm19 */
+            --border-color: #dddddd; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        body {
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            font-family: 'Times New Roman', Times, serif; /* Font Klasik Berita - Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            padding: 0; /* Copyright by Mr.Rm19 */
+            user-select: none; /* PROTEKSI: Anti-Copy - Copyright by Mr.Rm19 */
+            -webkit-user-select: none; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        header {
+            border-bottom: 5px double var(--deep-black); /* Style Koran - Copyright by Mr.Rm19 */
+            padding: 40px 20px; /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            background-color: var(--pure-white); /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .site-logo {
+            font-size: 3.5rem; /* Copyright by Mr.Rm19 */
+            font-weight: 900; /* Copyright by Mr.Rm19 */
+            letter-spacing: -2px; /* Copyright by Mr.Rm19 */
+            margin: 0; /* Copyright by Mr.Rm19 */
+            color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .tagline {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-size: 1rem; /* Copyright by Mr.Rm19 */
+            font-style: italic; /* Copyright by Mr.Rm19 */
+            margin-top: 10px; /* Copyright by Mr.Rm19 */
+            border-top: 1px solid var(--border-color); /* Copyright by Mr.Rm19 */
+            border-bottom: 1px solid var(--border-color); /* Copyright by Mr.Rm19 */
+            display: inline-block; /* Copyright by Mr.Rm19 */
+            padding: 5px 20px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .container {
+            max-width: 1200px; /* Copyright by Mr.Rm19 */
+            margin: 30px auto; /* Copyright by Mr.Rm19 */
+            padding: 20px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .section-title {
+            border-bottom: 2px solid var(--deep-black); /* Copyright by Mr.Rm19 */
+            margin-bottom: 30px; /* Copyright by Mr.Rm19 */
+            padding-bottom: 5px; /* Copyright by Mr.Rm19 */
+            font-size: 1.5rem; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .news-grid {
+            display: grid; /* Copyright by Mr.Rm19 */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Copyright by Mr.Rm19 */
+            gap: 40px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .news-article {
+            text-decoration: none; /* Copyright by Mr.Rm19 */
+            color: inherit; /* Copyright by Mr.Rm19 */
+            display: block; /* Copyright by Mr.Rm19 */
+            border-bottom: 1px solid var(--border-color); /* Copyright by Mr.Rm19 */
+            padding-bottom: 20px; /* Copyright by Mr.Rm19 */
+            transition: 0.3s; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .news-article:hover {
+            opacity: 0.7; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-category {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+            font-size: 0.8rem; /* Copyright by Mr.Rm19 */
+            text-transform: uppercase; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-title {
+            font-size: 1.8rem; /* Copyright by Mr.Rm19 */
+            margin: 10px 0; /* Copyright by Mr.Rm19 */
+            line-height: 1.2; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .article-excerpt {
+            font-family: Arial, sans-serif; /* Font Bacaan - Copyright by Mr.Rm19 */
+            font-size: 0.95rem; /* Copyright by Mr.Rm19 */
+            color: #444; /* Copyright by Mr.Rm19 */
+            line-height: 1.6; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        footer {
+            background-color: var(--deep-black); /* Copyright by Mr.Rm19 */
+            color: var(--pure-white); /* Copyright by Mr.Rm19 */
+            text-align: center; /* Copyright by Mr.Rm19 */
+            padding: 60px 20px; /* Copyright by Mr.Rm19 */
+            margin-top: 50px; /* Copyright by Mr.Rm19 */
+        }
+
+        /* Copyright by Mr.Rm19 */
+        .footer-logo {
+            color: var(--gold-premium); /* Copyright by Mr.Rm19 */
+            font-size: 1.5rem; /* Copyright by Mr.Rm19 */
+            font-weight: bold; /* Copyright by Mr.Rm19 */
+        }
+    </style>
+
+    <!-- SECURITY CORE BY Mr.Rm19 -->
+    <script>
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        /* Copyright by Mr.Rm19 */
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73) || (e.ctrlKey && e.keyCode == 85)) {
+                return false;
+            }
+        };
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('copy', (e) => {
+            e.preventDefault();
+            alert("MAAF: Konten berita Mr.Rm19 tidak boleh disalin.");
+        });
+    </script>
+</head>
+<body oncontextmenu="return false;"> <!-- Copyright by Mr.Rm19 -->
+
+    <header> <!-- Copyright by Mr.Rm19 -->
+        <h1 class="site-logo">ALL-NEWS</h1> <!-- Copyright by Mr.Rm19 -->
+        <div class="tagline">The Intelligence of Digital Education by Mr.Rm19</div> <!-- Copyright by Mr.Rm19 -->
+    </header> <!-- Copyright by Mr.Rm19 -->
+
+    <div class="container"> <!-- Copyright by Mr.Rm19 -->
+        <div class="section-title">EDUKASI DIGITAL</div> <!-- Copyright by Mr.Rm19 -->
+        
+        <div class="news-grid"> <!-- Copyright by Mr.Rm19 -->
+            
+            <!-- Berita 1 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Edukasi-Digital/masa-depan-literasi-2026.html" class="news-article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-category">Teknologi & Pendidikan</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-title"> Masa Depan Literasi Digital di Era 2026</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-excerpt">Dalam laporan terbaru Mr.Rm19, diungkapkan bahwa edukasi digital menjadi pilar utama dalam membangun kedaulatan bangsa di tengah gempuran teknologi global...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita 2 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Edukasi-Digital/optimasi-jaringan-edukasi.html" class="news-article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-category">Infrastruktur IT</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-title"> Mengoptimalkan Jaringan Lokal Untuk Edukasi</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-excerpt">Bagaimana sistem manajemen data yang efisien dapat membantu institusi pendidikan mengelola informasi secara mandiri dan aman dari gangguan luar...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+            <!-- Berita 3 - Copyright by Mr.Rm19 -->
+            <a href="https://mister-rdanm19.github.io/ALL-NEWS/Edukasi-Digital/proteksi-konten.html" class="news-article"> <!-- Copyright by Mr.Rm19 -->
+                <span class="article-category">Keamanan Data</span> <!-- Copyright by Mr.Rm19 -->
+                <h2 class="article-title"> Pentingnya Proteksi Konten di Media Digital</h2> <!-- Copyright by Mr.Rm19 -->
+                <p class="article-excerpt">Mr.Rm19 menegaskan bahwa setiap karya digital memerlukan sistem perlindungan yang kuat untuk menghindari pencurian intelektual oleh pihak yang tidak bertanggung jawab...</p> <!-- Copyright by Mr.Rm19 -->
+            </a> <!-- Copyright by Mr.Rm19 -->
+
+        </div> <!-- Copyright by Mr.Rm19 -->
+    </div> <!-- Copyright by Mr.Rm19 -->
+
+    <footer> <!-- Copyright by Mr.Rm19 -->
+        <div class="footer-logo">Mr.Rm19 Intelligence</div> <!-- Copyright by Mr.Rm19 -->
+        <p style="margin: 15px 0; font-size: 0.9rem;">&copy; 2026 Hak Cipta Dilindungi. Seluruh konten dalam folder Edukasi-Digital adalah milik Mr.Rm19.</p> <!-- Copyright by Mr.Rm19 -->
+        <p style="font-size: 0.7rem; color: #777;">Dilarang keras melakukan inspeksi kode atau menyalin data tanpa izin tertulis dari pemilik repositori ALL-NEWS.</p> <!-- Copyright by Mr.Rm19 -->
+    </footer> <!-- Copyright by Mr.Rm19 -->
+
+</body> <!-- Copyright by Mr.Rm19 -->
+</html> <!-- Copyright by Mr.Rm19 -->
