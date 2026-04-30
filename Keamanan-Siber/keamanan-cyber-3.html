@@ -1,0 +1,173 @@
+<!-- Copyright by Mr.Rm19 - ALL-NEWS Intelligence -->
+<!DOCTYPE html> <!-- Copyright by Mr.Rm19 -->
+<html lang="id"> <!-- Copyright by Mr.Rm19 -->
+<head> <!-- Copyright by Mr.Rm19 -->
+    <meta charset="UTF-8"> <!-- Copyright by Mr.Rm19 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Copyright by Mr.Rm19 -->
+    <title>Keamanan Website Statis | ALL-NEWS by Mr.Rm19</title> <!-- Copyright by Mr.Rm19 -->
+    
+    <style>
+        /* Copyright by Mr.Rm19 */
+        :root {
+            --gold-premium: #c5a059;
+            --pure-white: #ffffff;
+            --deep-black: #111111;
+        }
+
+        body {
+            background-color: var(--pure-white);
+            color: var(--deep-black);
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            user-select: none; /* PROTEKSI TOTAL - Copyright by Mr.Rm19 */
+            -webkit-user-select: none;
+        }
+
+        header {
+            border-bottom: 4px double var(--deep-black);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .site-logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 30px;
+        }
+
+        .article-header {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .category-label {
+            color: var(--gold-premium);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin: 15px 0;
+        }
+
+        .content {
+            font-size: 1.15rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            border-left: 5px solid var(--gold-premium);
+            background-color: #f9f9f9;
+            padding: 25px;
+            margin: 40px 0;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            font-size: 1.8rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--deep-black);
+            display: inline-block;
+        }
+
+        footer {
+            background-color: var(--deep-black);
+            color: var(--pure-white);
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 80px;
+            border-top: 5px solid var(--gold-premium);
+        }
+    </style>
+
+    <!-- ANTI-BYPASS SECURITY BY Mr.Rm19 -->
+    <script>
+        /* Copyright by Mr.Rm19 */
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || (e.ctrlKey && e.keyCode == 85)) {
+                return false;
+            }
+        };
+    </script>
+</head>
+<body oncontextmenu="return false;">
+
+    <header>
+        <div class="site-logo">ALL-NEWS</div>
+        <div style="color: var(--gold-premium); font-weight: bold; letter-spacing: 2px;">Tech Security by Mr.Rm19</div>
+    </header>
+
+    <div class="container">
+        <article class="article-header">
+            <span class="category-label">Panduan Teknis / Keamanan Web</span>
+            <h1>Panduan Mengamankan Akses Konten pada Website Statis: Menjaga Kedaulatan Kode</h1>
+            <div style="font-size: 0.9rem; color: #666; font-style: italic;">
+                Laporan Teknis: Arsitek Sistem Mr.Rm19 | 30 April 2026
+            </div>
+        </article>
+
+        <div class="content">
+            <p><strong>PENDAHULUAN: DILEMA KEAMANAN WEBSITE STATIS</strong></p>
+            <p>Website statis, yang umumnya dibangun menggunakan HTML, CSS, dan JavaScript, menawarkan kecepatan dan skalabilitas luar biasa, terutama saat di-hosting di platform seperti GitHub Pages. Namun, sifat dasarnya yang transparan menimbulkan tantangan besar dalam hal keamanan konten dan perlindungan kode sumber. Analisis **Mr.Rm19 Intelligence** menggarisbawahi bahwa tanpa proteksi tambahan, seluruh logika pemrograman dan aset intelektual Anda terpapar secara terbuka bagi siapa saja yang memiliki akses ke peramban web.</p>
+
+            <p>Sebagai pengembang yang aktif mengelola proyek di GitHub dengan alias "Mr.Rm19", perlindungan terhadap orisinalitas adalah prioritas utama. Panduan ini dirancang untuk memberikan solusi taktis bagi Anda yang ingin mengoptimalkan keamanan pada infrastruktur statis tanpa harus beralih ke server backend yang kompleks. Kita akan membedah bagaimana menerapkan lapisan pertahanan yang mampu menghalau upaya penyalinan ilegal dan pengintaian kode oleh pihak yang tidak bertanggung jawab.</p>
+
+            <div class="highlight-box">
+                "Dalam dunia web statis, kode adalah aset sekaligus kerentanan. Mr.Rm19 menghadirkan protokol proteksi untuk memastikan karya Anda tetap menjadi milik Anda sepenuhnya."
+            </div>
+
+            <h2 class="sub-heading">I. Teknik Obfuscation: Menyamarkan Logika Kode</h2>
+            <p>Langkah pertama dalam mengamankan website statis adalah dengan melakukan *obfuscation* atau penyamaran pada kode JavaScript Anda. Teknik ini bekerja dengan mengubah variabel, fungsi, dan struktur kode yang mudah dibaca menjadi barisan karakter yang rumit dan membingungkan tanpa mengubah fungsinya. Mr.Rm19 menyarankan penggunaan alat *obfuscator* tingkat lanjut yang menyertakan fitur perlindungan terhadap *self-defending* dan *debug protection*.</p>
+            <p>Dengan menerapkan *obfuscation*, upaya peretas atau kompetitor untuk melakukan rekayasa balik (reverse engineering) terhadap logika aplikasi Anda akan terhambat secara signifikan. Ini sangat krusial jika Anda menyertakan skrip fungsional seperti *Domain Extractor* atau sistem verifikasi mandiri dalam website statis Anda. Kode yang tersamar menjadi lapisan pertahanan psikologis dan teknis yang kuat, menjaga rahasia algoritma tetap aman di bawah pengawasan Mr.Rm19.</p>
+
+            <h2 class="sub-heading">II. Implementasi Proteksi Interface (Anti-Copy & Anti-Inspect)</h2>
+            <p>Proteksi pada sisi interface adalah barisan pertahanan yang paling terlihat oleh pengguna. Menggunakan skrip untuk menonaktifkan klik kanan (*context menu*) dan mencegah penggunaan tombol pintas untuk inspeksi elemen (F12, Ctrl+Shift+I, dll.) adalah standar wajib dalam ekosistem **ALL-NEWS**. Mr.Rm19 Intelligence menekankan bahwa meskipun teknik ini tidak 100% menghalangi peretas profesional, ia sangat efektif untuk mencegah pencurian konten massal oleh pengguna awam dan bot otomatis.</p>
+            <p>Selain itu, penggunaan CSS `user-select: none` memastikan bahwa teks berita eksklusif berdurasi 1000+ kata milik Anda tidak dapat disorot atau disalin dengan mudah. Hal ini menjaga eksklusivitas informasi yang Anda sajikan di portal Nasional maupun Teknologi. Mr.Rm19 selalu memastikan setiap artikel yang dipublikasikan memiliki 'segel digital' ini untuk menghargai dedikasi intelektual di balik penulisan setiap baris konten.</p>
+
+            <h2 class="sub-heading">III. Pemanfaatan Header Keamanan dan HTTPS</h2>
+            <p>Keamanan website statis juga sangat bergantung pada konfigurasi server hosting. Memastikan website Anda berjalan di atas protokol HTTPS adalah langkah dasar yang tidak bisa ditawar di tahun 2026. HTTPS mengenkripsi data yang berpindah antara peramban pengguna dan server, mencegah serangan *Man-in-the-Middle*. Analisis dari Mr.Rm19 menunjukkan bahwa penggunaan header keamanan seperti *Content Security Policy* (CSP) dapat membantu mencegah eksekusi skrip berbahaya dari sumber yang tidak dikenal.</p>
+            <p>CSP memungkinkan Anda untuk menentukan domain mana saja yang diizinkan untuk memuat aset ke website Anda. Ini secara efektif menghentikan serangan *Cross-Site Scripting* (XSS) yang sering menargetkan kerentanan pada sisi klien. Sebagai pengembang yang teliti, Mr.Rm19 selalu mengonfigurasi header ini untuk memastikan integritas portal **ALL-NEWS** tetap terjaga dari gangguan pihak luar yang ingin menyisipkan iklan atau malware.</p>
+
+            <div class="highlight-box">
+                "Pertahanan web yang kuat adalah kombinasi antara kode yang sulit dibaca dan aturan akses yang sangat ketat. Mr.Rm19 tidak meninggalkan celah bagi ketidakteraturan."
+            </div>
+
+            <h2 class="sub-heading">IV. Penggunaan Subresource Integrity (SRI)</h2>
+            <p>Saat membangun website statis, kita sering menggunakan pustaka (library) eksternal dari Content Delivery Network (CDN). Namun, jika CDN tersebut disusupi, website Anda juga terancam. Solusi yang ditawarkan oleh protokol keamanan Mr.Rm19 adalah penggunaan *Subresource Integrity* (SRI). SRI memungkinkan peramban untuk memverifikasi bahwa file yang diambil (misalnya skrip JavaScript atau file CSS) belum dimodifikasi oleh pihak ketiga.</p>
+            <p>Dengan menyertakan hash kriptografi dalam tag skrip, Anda menjamin bahwa hanya kode asli yang Anda percayai yang akan dijalankan. Ini sangat relevan bagi Anda yang mengintegrasikan berbagai API atau framework dalam proyek-proyek GitHub Anda. Mr.Rm19 Intelligence selalu menekankan pentingnya verifikasi setiap komponen luar, karena dalam ekosistem siber 2026, kepercayaan harus selalu diikuti oleh verifikasi teknis yang absolut.</p>
+
+            <p><strong>PENUTUP: KEWIBAWAAN DIGITAL MELALUI KEAMANAN</strong></p>
+            <p>Mengamankan website statis adalah langkah krusial untuk membangun reputasi dan kewibawaan digital. Dengan mengikuti panduan dari Mr.Rm19 ini, Anda tidak hanya melindungi kode dan konten, tetapi juga memberikan rasa aman bagi pembaca setia **ALL-NEWS**. Proteksi adalah investasi, dan integritas adalah hasilnya.</p>
+            <p>Teruslah berinovasi dan kembangkan proyek-proyek besar Anda di GitHub. Biarkan sistem keamanan yang kita bangun menjadi penjaga setia bagi setiap karya yang Anda hasilkan. Mr.Rm19 akan selalu hadir untuk memberikan dukungan teknis dan intelijen guna memastikan dominasi Anda di jagat digital tetap tak tergoyahkan. Tetaplah aman, tetaplah eksklusif.</p>
+            
+            <p style="text-align: center; color: var(--gold-premium); font-weight: bold; margin-top: 50px;">
+                *** PANDUAN TEKNIS SELESAI - Mr.Rm19 SECURITY UNIT © 2026 ***
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div style="font-size: 1.5rem; color: var(--gold-premium); font-weight: bold;">Mr.Rm19 Intelligence Center</div>
+        <p>&copy; 2026 ALL-NEWS Hub. Seluruh hak cipta teknis dipegang oleh Mr.Rm19.</p>
+        <p style="font-size: 0.7rem; color: #555;">SYSTEM PROTOCOL: STATIC WEB PROTECTION ACTIVE. UNAUTHORIZED INSPECTION BLOCKED.</p>
+    </footer>
+
+</body>
+</html>
